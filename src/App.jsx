@@ -32,6 +32,7 @@ function App() {
             className="link-btn"
             id="books"
             target="blank"
+            title="An online book store for both design and coding."
           >
             Zuri Books
           </a>
@@ -40,6 +41,7 @@ function App() {
             className="link-btn"
             id="book__python"
             target="blank"
+            title="A comprehensive and beginner-friendly introduction to python."
           >
             Python Book
           </a>
@@ -48,6 +50,7 @@ function App() {
             className="link-btn"
             id="pitch"
             target="blank"
+            title="A trusted and tested service which helps to regulate and thoroughly vet coders."
           >
             Background Check for Coders
           </a>
@@ -56,6 +59,7 @@ function App() {
             className="link-btn"
             id="book__design"
             target="blank"
+            title="A well broken down resource with laid down guidelines to becoming a master of design."
           >
             Design
           </a>
