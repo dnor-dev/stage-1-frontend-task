@@ -9,6 +9,7 @@ function App() {
         className="share-btn"
       />
       <div className="App-header">
+        <img src="/menu-btn.svg" alt="menu-btn" className="menu-btn" />
         <img
           src="/profile-pics.jpg"
           alt="profile-pics"

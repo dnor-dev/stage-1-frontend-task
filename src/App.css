@@ -5,6 +5,7 @@
 
 .App-header {
   padding-top: 1.5rem;
+  position: relative;
   width: 80%;
   margin: auto;
   display: flex;
@@ -25,9 +26,14 @@
   display: none;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .share-btn {
   cursor: pointer;
   position: absolute;
+  z-index: 99;
   right: 390px;
   top: 30px;
 }
@@ -120,5 +126,14 @@
 
   .share-btn {
     display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    right: 7px;
+    top: 30px;
   }
 }
