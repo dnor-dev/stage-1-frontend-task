@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+
+.App-header {
+  padding-top: 1.5rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-header h3 {
+  margin-top: 15px;
+  color: #101828;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.App-header h5 {
+  margin-top: 1px;
+  display: none;
+}
+
+.share-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 390px;
+  top: 30px;
+}
+
+.profile-pics {
+  margin-top: 2rem;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.links a {
+  color: #101828;
+  text-decoration: none;
+  background-color: #eaecf0;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 24px 32px;
+  border-radius: 8px;
+  margin-bottom: 1.3rem;
+}
+
+.links a:hover {
+  background-color: #d6d7da;
+  transition: all ease-out 200ms;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social-icons img {
+  margin: 0 0.6rem 5rem 0.6rem;
+}
+
+.footer {
+  width: 85%;
+  border-top: 1px solid #eaecf0;
+  padding: 1.3rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p {
+  color: #667085;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  .App-header {
+    width: 90%;
+  }
+
+  .App-header h3 {
+    font-size: 18px;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+
+  .footer {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer img {
+    zoom: 0.7;
+  }
+
+  .share-btn {
+    display: none;
+  }
+}
