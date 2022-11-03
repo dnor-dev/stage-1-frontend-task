@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Loader from './components/Loader'
 
 const Home = lazy(() => import('./components/App'))
+const Form = lazy(() => import('./components/ContactForm'))
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Form />} />
           </Routes>
         </motion.div>
       </Suspense>
