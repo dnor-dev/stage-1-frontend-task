@@ -1,4 +1,4 @@
-import './App.css'
+import React from 'react'
 
 function App() {
   return (
@@ -69,11 +69,6 @@ function App() {
           <img src="/Social icon.svg" alt="github-icon" />
         </div>
       </div>
-      <footer className="footer">
-        <img src="/Zuri.Internship_Logo.svg" alt="zuri-logo" />
-        <p>HNG Internship 9 Frontend Task</p>
-        <img src="/I4G.svg" alt="i4g-logo" />
-      </footer>
     </div>
   )
 }

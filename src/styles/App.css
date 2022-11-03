@@ -81,6 +81,44 @@
   margin: 0 0.6rem 5rem 0.6rem;
 }
 
+/* Spinner Loader */
+.loader-bg {
+  background: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.spin::before {
+  animation: 0.7s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 3.5px #4c4c4d;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  zoom: 0.8;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
 .footer {
   width: 85%;
   border-top: 1px solid #eaecf0;
