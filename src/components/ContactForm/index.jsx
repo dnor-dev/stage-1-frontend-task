@@ -14,9 +14,6 @@ const ContactForm = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact DNor</title>
-      </Helmet>
       <div className="contact-form">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask anything you have in mind</p>
