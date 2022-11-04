@@ -364,7 +364,7 @@ textarea:focus {
     cursor: pointer;
     position: absolute;
     z-index: 99;
-    right: 7px;
+    right: 0;
     top: 30px;
   }
 

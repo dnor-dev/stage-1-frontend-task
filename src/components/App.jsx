@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function App() {
   return (
@@ -19,17 +20,14 @@ function App() {
         <h3 id="twitter">David Norue</h3>
         <h5 id="slack">DNor</h5>
         <div className="links">
-          <a
-            href="https://training.zuri.team/"
-            className="link-btn"
-            id="btn__zuri"
-            target="blank"
-          >
+          <a href="https://twitter.com/DNorue" target="blank">
+            Twitter Link
+          </a>
+          <a href="https://training.zuri.team/" id="btn__zuri" target="blank">
             Zuri Team
           </a>
           <a
             href="http://books.zuri.team/"
-            className="link-btn"
             id="books"
             target="blank"
             title="An online book store for both design and coding."
@@ -38,7 +36,6 @@ function App() {
           </a>
           <a
             href="https://books.zuri.team/python-for-beginners?ref_id=DNor"
-            className="link-btn"
             id="book__python"
             target="blank"
             title="A comprehensive and beginner-friendly introduction to python."
@@ -47,7 +44,6 @@ function App() {
           </a>
           <a
             href="https://background.zuri.team/"
-            className="link-btn"
             id="pitch"
             target="blank"
             title="A trusted and tested service which helps to regulate and thoroughly vet coders."
@@ -56,13 +52,13 @@ function App() {
           </a>
           <a
             href="https://books.zuri.team/design-rules"
-            className="link-btn"
             id="book__design"
             target="blank"
             title="A well broken down resource with laid down guidelines to becoming a master of design."
           >
             Design
           </a>
+          <Link to="/contact">Contact Me</Link>
         </div>
         <div className="social-icons">
           <img src="/slack.svg" alt="slack-icon" />
