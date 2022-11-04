@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ContactForm = () => {
+  const handleChange = e => {
+    if (e.target.value === '') {
+      setError(true)
+    } else {
+      setError(false)
+    }
+  }
+
+  const [error, setError] = useState(false)
+
   return (
     <div className="contact-form">
       <h1>Contact Me</h1>
@@ -14,6 +24,7 @@ const ContactForm = () => {
               type="text"
               placeholder="Enter your firstname"
               id="first_name"
+              required
             />
           </div>
           <div>
@@ -22,12 +33,18 @@ const ContactForm = () => {
               type="text"
               placeholder="Enter your lastname"
               id="last_name"
+              required
             />
           </div>
         </div>
         <div>
           <label htmlFor="email">Email</label>
-          <input type="email" placeholder="yourname@email.com" id="email" />
+          <input
+            type="email"
+            placeholder="yourname@email.com"
+            id="email"
+            required
+          />
         </div>
         <div>
           <label htmlFor="message">Message</label>
@@ -35,7 +52,10 @@ const ContactForm = () => {
             name="message"
             id="message"
             placeholder="Send me a message and i'll reply you as soon as possible..."
+            onChange={handleChange}
+            className={error ? 'inputError' : undefined}
           ></textarea>
+          {error && <p className="error-text">Please enter a message</p>}
         </div>
         <div>
           <label htmlFor="agree" className="checkbox-container">
@@ -50,6 +70,7 @@ const ContactForm = () => {
           value="Send Message"
           className="submit-btn"
           id="btn__submit"
+          disabled={error}
         />
       </form>
     </div>
