@@ -58,7 +58,7 @@ function App() {
           >
             Design
           </a>
-          <Link to="/contact">Contact Me</Link>
+          <a href="/contact" id='contact'>Contact Me</a>
         </div>
         <div className="social-icons">
           <img src="/slack.svg" alt="slack-icon" />
