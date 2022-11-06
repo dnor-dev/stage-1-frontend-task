@@ -66,13 +66,9 @@ const ContactForm = () => {
             </label>
           </div>
 
-          <input
-            type="submit"
-            value="Send Message"
-            className="submit-btn"
-            id="btn__submit"
-            disabled={error}
-          />
+          <button className="submit-btn" id="btn__submit" disabled={error}>
+            Send Message
+          </button>
         </form>
       </div>
     </>
